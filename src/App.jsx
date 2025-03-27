@@ -19,13 +19,13 @@ function App() {
 
     ws.onmessage = (event) => {
       const data = JSON.parse(event.data);
-      console.log("Received:", data);
-      console.log("web socket connected", ws);
+      // console.log("Received:", data);
+      // console.log("web socket connected", ws);
 
       if (data.type === "playerUpdate") {
         setPlayers(data.players);
         const me = data.players.find((p) => p.id === ws.playerId);
-        console.log("Me in useEffected:", me);
+        // console.log("Me in useEffected:", me);
 
         if (me) setPlayerHealth(me.health);
       }
@@ -79,7 +79,7 @@ function App() {
     }
 
     const me = players.find((p) => p.id === ws.playerId);
-    console.log("Me: ", me);
+    // console.log("Me: ", me);
 
     if (me && targetId === me.id) {
       setFeedback("Cannot attack yourself!");
