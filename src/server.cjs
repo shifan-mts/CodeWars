@@ -353,8 +353,11 @@ const correctAnswers = {
   "What symbol is used to indicate a single line comment in C?": "//",
   "Which of the following is NOT a valid variable name in C?\nA) my_var\nB) 2ndVariable\nC) _temp\nD) value_1":
     "B",
-  '#include <stdio.h>\nint main() {\nint a = 23;\nint b = 23;\nprintf("%d", a*b);\nreturn 0;\n}\n//What is the output of the following C code?':
-    "529",
+  '#include <stdio.h>\nint main() {\nint a = 10;\nint b = 2;\nprintf("%d", a*b);\nreturn 0;\n}\n//What is the output of the following C code?':
+    "20",
+    '#include <stdio.h>\nint main() {\nint a = 10;\nint b = 2;\nprintf("%d", a*b);\nreturn 0;\n}\n//What is the output of the following C code?': 
+     "20",
+
   "Which operator is used for assignment in C?": "=",
   'How many times will the following loop execute?\nint i = 1;\nwhile (i <= 5) {\nprintf("%d", i);\ni++;\n}':
     "5",
@@ -364,7 +367,7 @@ const correctAnswers = {
     "D",
   "What is the purpose of the main() function in a C program?\na) It defines the structure of the program.\nb) It is where the program execution begins.\nc) It handles input/output operations.\nd) It declares variables.":
     "b",
-  "Which loop is best when the number of iterations is known?": "for loop",
+  "Which loop is best when the number of iterations is known?": "for loop" || "for",
   "What will the following for loop output?": "Depends on the loop content",
   'int a = 10, b = 20;\nint temp = a;\na = b;\nb = temp;\nprintf("%d %d", a, b);\n// What is the output?':
     "20 10",

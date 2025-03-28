@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const ws = new WebSocket("https://serv1-pik2.onrender.com");
+const ws = new WebSocket("https://game-new.onrender.com");
 
 function App() {
   const [playerName, setPlayerName] = useState("");
